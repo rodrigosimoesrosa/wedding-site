@@ -1,8 +1,8 @@
 ;(function () {
-	
+
 	'use strict';
 
-	// iPad and iPod detection	
+	// iPad and iPod detection
 	var isiPad = function(){
 		return (navigator.platform.indexOf("iPad") != -1);
 	};
@@ -10,7 +10,7 @@
 
 	var isiPhone = function(){
 	    return (
-			(navigator.platform.indexOf("iPhone") != -1) || 
+			(navigator.platform.indexOf("iPhone") != -1) ||
 			(navigator.platform.indexOf("iPod") != -1)
 	    );
 	};
@@ -78,11 +78,11 @@
 				}
 			}
 
-		});	
+		});
 
 	}
 
-	
+
 
 	// Click outside of the Mobile Menu
 	var mobileMenuOutsideClick = function() {
@@ -104,7 +104,7 @@
 		$('.animate-box').waypoint( function( direction ) {
 
 			if( direction === 'down' && !$(this.element).hasClass('animated') ) {
-				
+
 				i++;
 
 				$(this.element).addClass('item-animate');
@@ -117,14 +117,14 @@
 							el.removeClass('item-animate');
 						},  k * 50, 'easeInOutExpo' );
 					});
-					
+
 				}, 100);
-				
+
 			}
 
 		} , { offset: '85%' } );
 	};
-	
+
 	var stickyBanner = function() {
 		var $stickyElement = $('.sticky-banner');
 		var sticky;
@@ -137,7 +137,7 @@
 	};
 
 	// Set the date we're counting down to
-	var countDownDate = new Date("Dec 28, 2017 15:37:25").getTime();
+	var countDownDate = new Date("Sep 29, 2018 17:00:00").getTime();
 
 	// Update the count down every 1 second
 	var x = setInterval(function() {
@@ -164,7 +164,7 @@
 	document.getElementById("minutes").innerHTML = minutes + " <small>minutes</small> ";
 	document.getElementById("seconds").innerHTML = seconds + " <small>seconds</small> ";
 
-	// If the count down is finished, write some text 
+	// If the count down is finished, write some text
 	if (distance < 0) {
 	 clearInterval(x);
 	 document.getElementById("demo").innerHTML = "The Wedding Ceremony is Over";

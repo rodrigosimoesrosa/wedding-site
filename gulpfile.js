@@ -17,7 +17,7 @@ var jsSources = ['js/*.js'],
 
 gulp.task('sass', function() {
   gulp.src(sassSources)
-  .pipe(sass({outputStyle: 'expanded'}))
+  .pipe(sass({outputStyle: 'compressed'}))
     .on('error', gutil.log)
   .pipe(gulp.dest(outputCSSDir))
   .pipe(connect.reload())

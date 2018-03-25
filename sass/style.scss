@@ -89,7 +89,6 @@ $form-group-margin-bottom: 30px;
          url('../fonts/personal/stylish_calligraphy_demo/stylish_calligraphy_demo-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
 
 @mixin icomoon() {
@@ -646,7 +645,7 @@ figure {
 		span{
 			margin: 0 30px;
 			display: inline-block;
-			font-family: $font-secondary;
+			font-family: $font-primary;
 		}
 		small{
 			display: block;

@@ -776,6 +776,13 @@ google.maps.event.addDomListener(window, 'load', init);
 		return (navigator.platform.indexOf("iPad") != -1);
 	};
 
+	function openPresenceConfirmation() {
+		window.open('http://sites.icasei.com.br/nataliarodrigo29092018/pt_br/rsvp');
+	};
+
+	function openGiftList() {
+		window.open('https://sites.icasei.com.br/nataliarodrigo29092018/pt_br/store/9/1/1')
+	};
 
 	var isiPhone = function(){
 	    return (

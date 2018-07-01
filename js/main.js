@@ -144,7 +144,7 @@
 	};
 
 	// Set the date we're counting down to
-	var countDownDate = new Date("Sep 29, 2018 15:00:00").getTime();
+	var countDownDate = new Date("Sep 29, 2018 15:30:00").getTime();
 
 	// Update the count down every 1 second
 	var x = setInterval(function() {
@@ -166,10 +166,10 @@
 	// + minutes + "Minutes " + seconds + "Seconds ";
 
 	// Display the result in an element with id="demo"
-	document.getElementById("days").innerHTML = days +" <small>days</small>";
-	document.getElementById("hours").innerHTML = hours + " <small>hours</small> ";
-	document.getElementById("minutes").innerHTML = minutes + " <small>minutes</small> ";
-	document.getElementById("seconds").innerHTML = seconds + " <small>seconds</small> ";
+	document.getElementById("days").innerHTML = days +" <small>Dias</small>";
+	document.getElementById("hours").innerHTML = hours + " <small>Horas</small> ";
+	document.getElementById("minutes").innerHTML = minutes + " <small>Minutos</small> ";
+	document.getElementById("seconds").innerHTML = seconds + " <small>Segundos</small> ";
 
 	// If the count down is finished, write some text
 	if (distance < 0) {
